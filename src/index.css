@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 :root {
   font-family: 'Inter Tight', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -11,6 +12,20 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+.removeButton {
+  background-color: red;
+  justify-content: center;
+}
+
+.addButton {
+  background-color: green;
+  justify-content: center;
 }
 
 a {
@@ -96,7 +111,7 @@ tbody tr:nth-child(odd) {
 
 .nav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: left;
   padding: 1em 2em;
 }
 

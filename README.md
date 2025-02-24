@@ -1,33 +1,11 @@
-# React + TypeScript + Vite
+# GitHub Candidate Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a "Candidate Search" application, which allows you to search through GitHub users as potential employee candidates. It connects to the GitHub API, fetches user data, and displays the user information to the client. From there, you can use + or - buttons to add the candidate to your potential candidate database (i.e. saves to local storage), or - to pass on them. 
 
-Currently, two official plugins are available:
+You can visit the "Potential Candidates" page to view all + (saved) candidates for your potential search. The users are displayed in a table, and you can ultimately reject them from there as well (i.e. remove from your list and local storage). 
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+Built using Vite, React, Node, TSX and deployed on Render.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-* Configure the top-level `parserOptions` property as follows:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
-
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+This is starter code that needs refinement, but you can npm install and npm run dev to test functionality. Create your own personal fine grained GitHub token to connect to the API, and update .env as necessary.
